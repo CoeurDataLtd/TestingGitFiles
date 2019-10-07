@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Job Name="Job_CPU_Test"
+   Desc=""
+   Status="1"
+   WaveNo="1"
+   StartDateTime="2018-10-05T15:27:21"
+   EndDateTime="2018-10-05T15:28:36"
+   ElapsedTime="00:01:15"
+   ElapsedSecs="75">
+   <ComponentSet>
+      <Stage Name="Row_Generator_0"
+         StageStatus="2"
+         StageType="PxRowGenerator"
+         Desc=""
+         StartDateTime="2018-10-05T15:27:24"
+         EndDateTime="2018-10-05T15:27:57"
+         ElapsedTime="00:00:33"
+         ElapsedSecs="33">
+         <OutputLinks>
+            <Link Name="DSLink2"
+               LinkType="3"
+               Desc=""
+               Stage="Sort_3"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="19.9485"
+               PID="2956">
+               <Link Name="DSLink2"
+                  RowCount="100000000"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Sort_3"
+         StageStatus="2"
+         StageType="PxSort"
+         Desc=""
+         StartDateTime="2018-10-05T15:27:24"
+         EndDateTime="2018-10-05T15:28:35"
+         ElapsedTime="00:01:11"
+         ElapsedSecs="71">
+         <InputLinks>
+            <Link Name="DSLink2"
+               LinkType="1"
+               Desc=""
+               Stage="Row_Generator_0"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink5"
+               LinkType="3"
+               Desc=""
+               Stage="Aggregator_15"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="43.4946"
+               PID="6416">
+               <Link Name="DSLink2"
+                  RowCount="50000431"/>
+               <Link Name="DSLink5"
+                  RowCount="50000431"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="54.2263"
+               PID="8444">
+               <Link Name="DSLink2"
+                  RowCount="49999569"/>
+               <Link Name="DSLink5"
+                  RowCount="49999569"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Aggregator_15"
+         StageStatus="2"
+         StageType="PxAggregator"
+         Desc=""
+         StartDateTime="2018-10-05T15:27:24"
+         EndDateTime="2018-10-05T15:28:35"
+         ElapsedTime="00:01:11"
+         ElapsedSecs="71">
+         <InputLinks>
+            <Link Name="DSLink5"
+               LinkType="1"
+               Desc=""
+               Stage="Sort_3"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink16"
+               LinkType="3"
+               Desc=""
+               Stage="Peek_9"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="42.3465"
+               PID="2904">
+               <Link Name="DSLink5"
+                  RowCount="50000431"/>
+               <Link Name="DSLink16"
+                  RowCount="50000431"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="49.3214"
+               PID="1804">
+               <Link Name="DSLink5"
+                  RowCount="49999569"/>
+               <Link Name="DSLink16"
+                  RowCount="49999569"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Peek_9"
+         StageStatus="2"
+         StageType="PxPeek"
+         Desc=""
+         StartDateTime="2018-10-05T15:27:24"
+         EndDateTime="2018-10-05T15:28:35"
+         ElapsedTime="00:01:11"
+         ElapsedSecs="71">
+         <InputLinks>
+            <Link Name="DSLink16"
+               LinkType="1"
+               Desc=""
+               Stage="Aggregator_15"/>
+         </InputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0.4024"
+               PID="8932">
+               <Link Name="DSLink16"
+                  RowCount="10"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="0.568"
+               PID="7588">
+               <Link Name="DSLink16"
+                  RowCount="10"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+   </ComponentSet>
+</Job>
