@@ -1,140 +1,503 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Job Name="Job_CPU_Test"
+<Job Name="TESTING_ENV2"
    Desc=""
-   Status="1"
+   Status="2"
    WaveNo="1"
-   StartDateTime="2018-10-05T15:27:21"
-   EndDateTime="2018-10-05T15:28:36"
-   ElapsedTime="00:01:15"
-   ElapsedSecs="75">
+   StartDateTime="2018-09-03T12:05:18"
+   EndDateTime="2018-09-03T12:05:29"
+   ElapsedTime="00:00:11"
+   ElapsedSecs="11">
+   <ParamSet>
+      <Param Name="$OSH_PRINT_SCHEMAS"
+         Type="5"
+         Desc="Causes Parallel job to print the record schema of all data sets and the interface schema of all operators."
+         Value="True"/>
+   </ParamSet>
    <ComponentSet>
-      <Stage Name="Row_Generator_0"
+      <Stage Name="DB2_Connector_0"
          StageStatus="2"
-         StageType="PxRowGenerator"
+         StageType="DB2ConnectorPX"
          Desc=""
-         StartDateTime="2018-10-05T15:27:24"
-         EndDateTime="2018-10-05T15:27:57"
-         ElapsedTime="00:00:33"
-         ElapsedSecs="33">
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
          <OutputLinks>
             <Link Name="DSLink2"
                LinkType="3"
                Desc=""
-               Stage="Sort_3"/>
+               Stage="Copy_27"/>
          </OutputLinks>
          <InstanceSet>
             <Instance Id="0"
-               CPU="19.9485"
-               PID="2956">
+               CPU="2.3813"
+               PID="13636">
                <Link Name="DSLink2"
-                  RowCount="100000000"/>
+                  RowCount="6"/>
             </Instance>
          </InstanceSet>
       </Stage>
-      <Stage Name="Sort_3"
+      <Stage Name="Copy_27"
+         StageStatus="2"
+         StageType="PxCopy"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <InputLinks>
+            <Link Name="DSLink2"
+               LinkType="1"
+               Desc=""
+               Stage="DB2_Connector_0"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink5"
+               LinkType="3"
+               Desc=""
+               Stage="Filter_6"/>
+            <Link Name="DSLink14"
+               LinkType="3"
+               Desc=""
+               Stage="Lookup_15"/>
+            <Link Name="DSLink29"
+               LinkType="3"
+               Desc=""
+               Stage="Join_30"/>
+            <Link Name="DSLink42"
+               LinkType="3"
+               Desc=""
+               Stage="Change_Capture_43"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0.068"
+               PID="4904">
+               <Link Name="DSLink2"
+                  RowCount="3"/>
+               <Link Name="DSLink5"
+                  RowCount="3"/>
+               <Link Name="DSLink14"
+                  RowCount="3"/>
+               <Link Name="DSLink29"
+                  RowCount="3"/>
+               <Link Name="DSLink42"
+                  RowCount="3"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="0"
+               PID="15104">
+               <Link Name="DSLink2"
+                  RowCount="3"/>
+               <Link Name="DSLink5"
+                  RowCount="3"/>
+               <Link Name="DSLink14"
+                  RowCount="3"/>
+               <Link Name="DSLink29"
+                  RowCount="3"/>
+               <Link Name="DSLink42"
+                  RowCount="3"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Filter_6"
+         StageStatus="2"
+         StageType="PxFilter"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <CustInfoList>
+            <CustInfo Name="BusinessLogic"
+               Desc="User-supplied logic to filter operator">
+               <criterion name="where"><where value="deptno =10 or deptno=20" output_port="0"></where><where value="deptno =30 or deptno=40" output_port="1"></where></criterion>
+            </CustInfo>
+         </CustInfoList>
+         <InputLinks>
+            <Link Name="DSLink5"
+               LinkType="1"
+               Desc=""
+               Stage="Copy_27"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink8"
+               LinkType="3"
+               Desc=""
+               Stage="Data_Set_11"/>
+            <Link Name="DSLink10"
+               LinkType="3"
+               Desc=""
+               Stage="Data_Set_12"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0.1267"
+               PID="4904">
+               <CustInfo Name="CriterionSummary"
+                  Desc="Output summary per criterion">
+                  <where value="DEPTNO = 10 OR DEPTNO = 20" output_port="0" recProcessed="1"></where><where value="DEPTNO = 30 OR DEPTNO = 40" output_port="1" recProcessed="1"></where>
+               </CustInfo>
+               <Link Name="DSLink5"
+                  RowCount="3"/>
+               <Link Name="DSLink8"
+                  RowCount="1"/>
+               <Link Name="DSLink10"
+                  RowCount="1"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="0"
+               PID="15104">
+               <CustInfo Name="CriterionSummary"
+                  Desc="Output summary per criterion">
+                  <where value="DEPTNO = 10 OR DEPTNO = 20" output_port="0" recProcessed="1"></where><where value="DEPTNO = 30 OR DEPTNO = 40" output_port="1" recProcessed="1"></where>
+               </CustInfo>
+               <Link Name="DSLink5"
+                  RowCount="3"/>
+               <Link Name="DSLink8"
+                  RowCount="1"/>
+               <Link Name="DSLink10"
+                  RowCount="1"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Sequential_File_16"
+         StageStatus="2"
+         StageType="PxSequentialFile"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <OutputLinks>
+            <Link Name="DSLink17"
+               LinkType="3"
+               Desc=""
+               Stage="Lookup_15"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0"
+               PID="6688">
+               <Link Name="DSLink17"
+                  RowCount="4"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Lookup_15"
+         StageStatus="2"
+         StageType="PxLookup"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <InputLinks>
+            <Link Name="DSLink14"
+               LinkType="1"
+               Desc=""
+               Stage="Copy_27"/>
+            <Link Name="DSLink17"
+               LinkType="2"
+               Desc=""
+               Stage="Sequential_File_16"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink19"
+               LinkType="3"
+               Desc=""
+               Stage="Data_Set_22"/>
+            <Link Name="DSLink21"
+               LinkType="4"
+               Desc=""
+               Stage="Data_Set_23"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0.254"
+               PID="15344">
+               <Link Name="DSLink14"
+                  RowCount="3"/>
+               <Link Name="DSLink17"
+                  RowCount="3"/>
+               <Link Name="DSLink19"
+                  RowCount="2"/>
+               <Link Name="DSLink21"
+                  RowCount="1"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="0"
+               PID="12684">
+               <Link Name="DSLink14"
+                  RowCount="3"/>
+               <Link Name="DSLink17"
+                  RowCount="3"/>
+               <Link Name="DSLink19"
+                  RowCount="2"/>
+               <Link Name="DSLink21"
+                  RowCount="1"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Copy_of_Sequential_File_16"
+         StageStatus="2"
+         StageType="PxSequentialFile"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <OutputLinks>
+            <Link Name="DSLink17"
+               LinkType="3"
+               Desc=""
+               Stage="Join_30"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0"
+               PID="15180">
+               <Link Name="DSLink17"
+                  RowCount="4"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Join_30"
+         StageStatus="2"
+         StageType="PxJoin"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <InputLinks>
+            <Link Name="DSLink29"
+               LinkType="1"
+               Desc=""
+               Stage="Copy_27"/>
+            <Link Name="DSLink17"
+               LinkType="1"
+               Desc=""
+               Stage="Copy_of_Sequential_File_16"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink34"
+               LinkType="3"
+               Desc=""
+               Stage="Sequential_File_56"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0"
+               PID="10888">
+               <Link Name="DSLink29"
+                  RowCount="3"/>
+               <Link Name="DSLink17"
+                  RowCount="4"/>
+               <Link Name="DSLink34"
+                  RowCount="2"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="0"
+               PID="10556">
+               <Link Name="DSLink29"
+                  RowCount="1"/>
+               <Link Name="DSLink17"
+                  RowCount="0"/>
+               <Link Name="DSLink34"
+                  RowCount="0"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Sequential_File_38"
+         StageStatus="2"
+         StageType="PxSequentialFile"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <OutputLinks>
+            <Link Name="DSLink40"
+               LinkType="3"
+               Desc=""
+               Stage="Change_Capture_43"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0"
+               PID="7820">
+               <Link Name="DSLink40"
+                  RowCount="4"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Change_Capture_43"
+         StageStatus="2"
+         StageType="PxChangeCapture"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <InputLinks>
+            <Link Name="DSLink40"
+               LinkType="1"
+               Desc=""
+               Stage="Sequential_File_38"/>
+            <Link Name="DSLink42"
+               LinkType="1"
+               Desc=""
+               Stage="Copy_27"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink45"
+               LinkType="3"
+               Desc=""
+               Stage="Sort_48"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0.072"
+               PID="6900">
+               <Link Name="DSLink40"
+                  RowCount="2"/>
+               <Link Name="DSLink42"
+                  RowCount="3"/>
+               <Link Name="DSLink45"
+                  RowCount="1"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="0.212"
+               PID="11284">
+               <Link Name="DSLink40"
+                  RowCount="2"/>
+               <Link Name="DSLink42"
+                  RowCount="3"/>
+               <Link Name="DSLink45"
+                  RowCount="1"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Sequential_File_56"
+         StageStatus="2"
+         StageType="PxSequentialFile"
+         Desc=""
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
+         <InputLinks>
+            <Link Name="DSLink34"
+               LinkType="1"
+               Desc=""
+               Stage="Join_30"/>
+         </InputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0"
+               PID="11520">
+               <Link Name="DSLink34"
+                  RowCount="2"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Sort_48"
          StageStatus="2"
          StageType="PxSort"
          Desc=""
-         StartDateTime="2018-10-05T15:27:24"
-         EndDateTime="2018-10-05T15:28:35"
-         ElapsedTime="00:01:11"
-         ElapsedSecs="71">
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:27"
+         ElapsedTime="00:00:04"
+         ElapsedSecs="4">
          <InputLinks>
-            <Link Name="DSLink2"
+            <Link Name="DSLink45"
                LinkType="1"
                Desc=""
-               Stage="Row_Generator_0"/>
+               Stage="Change_Capture_43"/>
          </InputLinks>
          <OutputLinks>
-            <Link Name="DSLink5"
+            <Link Name="DSLink51"
                LinkType="3"
                Desc=""
-               Stage="Aggregator_15"/>
+               Stage="Surrogate_Key_Generator_49"/>
          </OutputLinks>
          <InstanceSet>
             <Instance Id="0"
-               CPU="43.4946"
-               PID="6416">
-               <Link Name="DSLink2"
-                  RowCount="50000431"/>
-               <Link Name="DSLink5"
-                  RowCount="50000431"/>
+               CPU="0.144"
+               PID="6900">
+               <Link Name="DSLink45"
+                  RowCount="1"/>
+               <Link Name="DSLink51"
+                  RowCount="1"/>
             </Instance>
             <Instance Id="1"
-               CPU="54.2263"
-               PID="8444">
-               <Link Name="DSLink2"
-                  RowCount="49999569"/>
-               <Link Name="DSLink5"
-                  RowCount="49999569"/>
+               CPU="0.212"
+               PID="11284">
+               <Link Name="DSLink45"
+                  RowCount="1"/>
+               <Link Name="DSLink51"
+                  RowCount="1"/>
             </Instance>
          </InstanceSet>
       </Stage>
-      <Stage Name="Aggregator_15"
+      <Stage Name="Surrogate_Key_Generator_49"
          StageStatus="2"
-         StageType="PxAggregator"
+         StageType="PxSurrogateKeyGeneratorN"
          Desc=""
-         StartDateTime="2018-10-05T15:27:24"
-         EndDateTime="2018-10-05T15:28:35"
-         ElapsedTime="00:01:11"
-         ElapsedSecs="71">
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:28"
+         ElapsedTime="00:00:05"
+         ElapsedSecs="5">
          <InputLinks>
-            <Link Name="DSLink5"
+            <Link Name="DSLink51"
                LinkType="1"
                Desc=""
-               Stage="Sort_3"/>
+               Stage="Sort_48"/>
          </InputLinks>
          <OutputLinks>
-            <Link Name="DSLink16"
+            <Link Name="DSLink52"
                LinkType="3"
                Desc=""
-               Stage="Peek_9"/>
+               Stage="Peek_46"/>
          </OutputLinks>
          <InstanceSet>
             <Instance Id="0"
-               CPU="42.3465"
-               PID="2904">
-               <Link Name="DSLink5"
-                  RowCount="50000431"/>
-               <Link Name="DSLink16"
-                  RowCount="50000431"/>
-            </Instance>
-            <Instance Id="1"
-               CPU="49.3214"
-               PID="1804">
-               <Link Name="DSLink5"
-                  RowCount="49999569"/>
-               <Link Name="DSLink16"
-                  RowCount="49999569"/>
+               CPU="0"
+               PID="7304">
+               <Link Name="DSLink51"
+                  RowCount="2"/>
+               <Link Name="DSLink52"
+                  RowCount="2"/>
             </Instance>
          </InstanceSet>
       </Stage>
-      <Stage Name="Peek_9"
+      <Stage Name="Peek_46"
          StageStatus="2"
          StageType="PxPeek"
          Desc=""
-         StartDateTime="2018-10-05T15:27:24"
-         EndDateTime="2018-10-05T15:28:35"
-         ElapsedTime="00:01:11"
-         ElapsedSecs="71">
+         StartDateTime="2018-09-03T12:05:23"
+         EndDateTime="2018-09-03T12:05:28"
+         ElapsedTime="00:00:05"
+         ElapsedSecs="5">
          <InputLinks>
-            <Link Name="DSLink16"
+            <Link Name="DSLink52"
                LinkType="1"
                Desc=""
-               Stage="Aggregator_15"/>
+               Stage="Surrogate_Key_Generator_49"/>
          </InputLinks>
          <InstanceSet>
             <Instance Id="0"
-               CPU="0.4024"
-               PID="8932">
-               <Link Name="DSLink16"
-                  RowCount="10"/>
+               CPU="0"
+               PID="13824">
+               <Link Name="DSLink52"
+                  RowCount="1"/>
             </Instance>
             <Instance Id="1"
-               CPU="0.568"
-               PID="7588">
-               <Link Name="DSLink16"
-                  RowCount="10"/>
+               CPU="0"
+               PID="15068">
+               <Link Name="DSLink52"
+                  RowCount="1"/>
             </Instance>
          </InstanceSet>
       </Stage>
