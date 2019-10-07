@@ -1,219 +1,142 @@
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (15,'//node[@componentName="tFileInputDelimited"]','"tFileInputDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (16,'//node[@componentName="tFileOutputDelimited"]','"tFileOutputDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (17,'//node[@componentName="tFileInputExcel"]','"tFileInputDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (18,'//node[@componentName="tFileOutputExcel"]','"tFileOutputExcel" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (19,'//node[@componentName="tFileInputXML"]','"tFileInputXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (20,'//node[@componentName="tFileOutputXML"]','"tFileOutputXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (21,'//node[@componentName="tFileInputFullRow"]','"tFileInputFullRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (22,'//node[@componentName="tFileInputJSON"]','"tFileInputJSON" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (23,'//node[@componentName="tFileOutputJSON"]','"tFileOutputJSON" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (24,'//node[@componentName="tFileInputMSDelimited"]','"tFileInputMSDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (25,'//node[@componentName="tFileOutputMSDelimited"]','"tFileOutputMSDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (26,'//node[@componentName="tFileInputMSPositional"]','"tFileInputMSPositional" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (27,'//node[@componentName="tFileOutputMSPositional"]','"tFileOutputMSPositional" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (28,'//node[@componentName="tFileInputMSXML"]','"tFileInputMSXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (29,'//node[@componentName="tFileOutputMSXML"]','"tFileOutputMSXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (30,'//node[@componentName="tFileInputPositional"]','"tFileInputPositional" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (31,'//node[@componentName="tFileOutputPositional"]','"tFileOutputPositional" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (32,'//node[@componentName="tFileInputProperties"]','"tFileInputProperties" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (33,'//node[@componentName="tFileOutputProperties"]','"tFileOutputProperties" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (34,'//node[@componentName="tFileInputRaw"]','"tFileInputRaw" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (35,'//node[@componentName="tFileOutputRaw"]','"tFileOutputRaw" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (36,'//node[@componentName="tApacheLogInput"]','"tApacheLogInput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (37,'//node[@componentName="tFileInputMail"]','"tFileInputMail" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (38,'//node[@componentName="tFileInputRegex"]','"tFileInputRegex" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (39,'//node[@componentName="tAdvancedFileOutputXML"]','"tAdvancedFileOutputXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (40,'//node[@componentName="tExternalSortOutput"]','"tExternalSortOutput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (41,'//node[@componentName="tPivotToColumnsDelimited"]','"tPivotToColumnsDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (42,'//node[@componentName="tAggregateRow"]','"tAggregateRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (43,'//node[@componentName="tAggregateSortedRow"]','"tAggregateSortedRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (44'//node[@componentName="tConvertType"]','"tConvertType" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (45,'//node[@componentName="tExternalSortRow"]','"tExternalSortRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (46,'//node[@componentName="tFilterColumns"]','"tFilterColumns" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (47,'//node[@componentName="tFilterRow"]','"tFilterRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (48,'//node[@componentName="tJoin"]','"tJoin" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (49,'//node[@componentName="tReplace"]','"tReplace" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (50,'//node[@componentName="tSampleRow"]','"tSampleRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (51,'//node[@componentName="tSortRow"]','"tSortRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (52,'//node[@componentName="tXMLMap"]','"tXMLMap" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (53,'//node[@componentName="tDB2BulkExec"]','"tDB2BulkExec" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (54,'//node[@componentName="tDB2Input"]','"tDB2Input" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (55,'//node[@componentName="tDB2Output"]','"tDB2Output" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (56,'//node[@componentName="tMSSqlBulkExec"]','"tMSSqlBulkExec" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (57,'//node[@componentName="tMSSqlInput"]','"tMSSqlInput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (58,'//node[@componentName="tMSSqlOutput"]','"tMSSqlOutput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (59,'//node[@componentName="tMap"]','"tMap" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (60,'//node[@componentName="tOracleBulkExec"]','"tOracleBulkExec" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (201,'//node[@componentName="tOracleInput"]','"tOracleInput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (202,'//node[@componentName="tOracleOutput"]','"tOracleOutput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (203,'//node[@componentName="tTeradataFastExport"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tTeradataFastExport"]/elementParameter[@name="LABEL"]','"tTeradataFastExport" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (204,'//node[@componentName="tTeradataFastLoad"]','"tTeradataFastLoad" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (205,'//node[@componentName="tTeradataInput"]','"tTeradataInput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (206,'//node[@componentName="tTeradataMultiLoad"]','"tTeradataMultiLoad" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (207,'//node[@componentName="tTeradataOutput"]','"tTeradataOutput" component xPATH');
-
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (208,'//node[@componentName="tDB2BulkExec"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tDB2BulkExec"]/elementParameter[@name="LABEL"]','"tDB2BulkExec" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (212,'//node[@componentName="tDB2Input"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tDB2Input"]/elementParameter[@name="LABEL"]','"tDB2Input" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (213,'//node[@componentName="tDB2Output"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tDB2Output"]/elementParameter[@name="LABEL"]','"tDB2Output" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (218,'//node[@componentName="tMSSqlBulkExec"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tMSSqlBulkExec"]/elementParameter[@name="LABEL"]','"tMSSqlBulkExec" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (223,'//node[@componentName="tMSSqlInput"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tMSSqlInput"]/elementParameter[@name="LABEL"]','"tMSSqlInput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (224,'//node[@componentName="tMSSqlOutput"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tMSSqlOutput"]/elementParameter[@name="LABEL"]','"tMSSqlOutput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (233,'//node[@componentName="tOracleBulkExec"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tOracleBulkExec"]/elementParameter[@name="LABEL"]','"tOracleBulkExec" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (234,'//node[@componentName="tOracleInput"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tOracleInput"]/elementParameter[@name="LABEL"]','"tOracleInput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (235,'//node[@componentName="tOracleOutput"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tOracleOutput"]/elementParameter[@name="LABEL"]','"tOracleOutput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (236,'//node[@componentName="tTeradataFastLoad"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tTeradataFastLoad"]/elementParameter[@name="LABEL"]','"tTeradataFastLoad" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (237,'//node[@componentName="tTeradataInput"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tTeradataInput"]/elementParameter[@name="LABEL"]','"tTeradataInput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (238,'//node[@componentName="tTeradataMultiLoad"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tTeradataMultiLoad"]/elementParameter[@name="LABEL"]','"tTeradataMultiLoad" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (239,'//node[@componentName="tTeradataOutput"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tTeradataOutput"]/elementParameter[@name="LABEL"]','"tTeradataOutput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (240,'//node[@componentName="tApacheLogInput"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tApacheLogInput"]/elementParameter[@name="LABEL"]','"tApacheLogInput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (241,'//node[@componentName="tFileInputDelimited"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputDelimited"]/elementParameter[@name="LABEL"]','"tFileInputDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (242,'//node[@componentName="tFileInputExcel"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputExcel"]/elementParameter[@name="LABEL"]','"tFileInputExcel" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (243,'//node[@componentName="tFileInputFullRow"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputFullRow"]/elementParameter[@name="LABEL"]','"tFileInputFullRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (244,'//node[@componentName="tFileInputJSON"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputJSON"]/elementParameter[@name="LABEL"]','"tFileInputJSON" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (245,'//node[@componentName="tFileInputMail"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputMail"]/elementParameter[@name="LABEL"]','"tFileInputMail" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (246,'//node[@componentName="tFileInputMSDelimited"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputMSDelimited"]/elementParameter[@name="LABEL"]','"tFileInputMSDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (247,'//node[@componentName="tFileInputMSPositional"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputMSPositional"]/elementParameter[@name="LABEL"]','"tFileInputMSPositional" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (248,'//node[@componentName="tFileInputMSXML"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputMSXML"]/elementParameter[@name="LABEL"]','"tFileInputMSXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (249,'//node[@componentName="tFileInputPositional"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputPositional"]/elementParameter[@name="LABEL"]','"tFileInputPositional" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (250,'//node[@componentName="tFileInputProperties"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputProperties"]/elementParameter[@name="LABEL"]','"tFileInputProperties" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (251,'//node[@componentName="tFileInputRaw"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputRaw"]/elementParameter[@name="LABEL"]','"tFileInputRaw" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (252,'//node[@componentName="tFileInputRegex"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputRegex"]/elementParameter[@name="LABEL"]','"tFileInputRegex" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (253,'//node[@componentName="tFileInputXML"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileInputXML"]/elementParameter[@name="LABEL"]','"tFileInputXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (254,'//node[@componentName="tAdvancedFileOutputXML"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tAdvancedFileOutputXML"]/elementParameter[@name="LABEL"]','"tAdvancedFileOutputXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (255,'//node[@componentName="tExternalSortOutput"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tExternalSortOutput"]/elementParameter[@name="LABEL"]','"tExternalSortOutput" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (256,'//node[@componentName="tFileOutputDelimited"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputDelimited"]/elementParameter[@name="LABEL"]','"tFileOutputDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (257,'//node[@componentName="tFileOutputExcel"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputExcel"]/elementParameter[@name="LABEL"]','"tFileOutputExcel" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (258,'//node[@componentName="tFileOutputJSON"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputJSON"]/elementParameter[@name="LABEL"]','"tFileOutputJSON" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (259,'//node[@componentName="tFileOutputMSDelimited"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputMSDelimited"]/elementParameter[@name="LABEL"]','"tFileOutputMSDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (260,'//node[@componentName="tFileOutputMSPositional"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputMSPositional"]/elementParameter[@name="LABEL"]','"tFileOutputMSPositional" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (261,'//node[@componentName="tFileOutputMSXML"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputMSXML"]/elementParameter[@name="LABEL"]','"tFileOutputMSXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (262,'//node[@componentName="tFileOutputPositional"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputPositional"]/elementParameter[@name="LABEL"]','"tFileOutputPositional" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (263,'//node[@componentName="tFileOutputProperties"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputProperties"]/elementParameter[@name="LABEL"]','"tFileOutputProperties" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (264,'//node[@componentName="tFileOutputRaw"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputRaw"]/elementParameter[@name="LABEL"]','"tFileOutputRaw" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (265,'//node[@componentName="tFileOutputXML"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFileOutputXML"]/elementParameter[@name="LABEL"]','"tFileOutputXML" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (266,'//node[@componentName="tPivotToColumnsDelimited"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tPivotToColumnsDelimited"]/elementParameter[@name="LABEL"]','"tPivotToColumnsDelimited" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (267,'//node[@componentName="tAggregateRow"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tAggregateRow"]/elementParameter[@name="LABEL"]','"tAggregateRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (268,'//node[@componentName="tAggregateSortedRow"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tAggregateSortedRow"]/elementParameter[@name="LABEL"]','"tAggregateSortedRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (269,'//node[@componentName="tConvertType"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tConvertType"]/elementParameter[@name="LABEL"]','"tConvertType" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (270,'//node[@componentName="tExternalSortRow"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tExternalSortRow"]/elementParameter[@name="LABEL"]','"tExternalSortRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (271,'//node[@componentName="tFilterColumns"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFilterColumns"]/elementParameter[@name="LABEL"]','"tFilterColumns" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (272,'//node[@componentName="tFilterRow"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tFilterRow"]/elementParameter[@name="LABEL"]','"tFilterRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (273,'//node[@componentName="tJoin"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tJoin"]/elementParameter[@name="LABEL"]','"tJoin" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (274,'//node[@componentName="tMap"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tMap"]/elementParameter[@name="LABEL"]','"tMap" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (275,'//node[@componentName="tReplace"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tReplace"]/elementParameter[@name="LABEL"]','"tReplace" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (276,'//node[@componentName="tSampleRow"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tSampleRow"]/elementParameter[@name="LABEL"]','"tSampleRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (277,'//node[@componentName="tSortRow"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tSortRow"]/elementParameter[@name="LABEL"]','"tSortRow" component xPATH');
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (278,'//node[@componentName="tXMLMap"]/elementParameter[@name="UNIQUE_NAME"] | //node[@componentName="tXMLMap"]/elementParameter[@name="LABEL"]','"tXMLMap" component xPATH');
-
-<-------File------>
-
-Insert into TALEND67.CBP_TA_XPATH (XPATH_ID,XPATH_NAME,XPATH_COMMENTS) 
-values (311,'//node[@componentName="tApacheLogInput"]/elementParameter[(@field="FILE") and (@name="FILENAME")]','"tApacheLogInput" component xPATH');
-
-
-commit;
+<?xml version="1.0" encoding="UTF-8"?>
+<Job Name="Job_CPU_Test"
+   Desc=""
+   Status="1"
+   WaveNo="1"
+   StartDateTime="2018-10-05T15:27:21"
+   EndDateTime="2018-10-05T15:28:36"
+   ElapsedTime="00:01:15"
+   ElapsedSecs="75">
+   <ComponentSet>
+      <Stage Name="Row_Generator_0"
+         StageStatus="2"
+         StageType="PxRowGenerator"
+         Desc=""
+         StartDateTime="2018-10-05T15:27:24"
+         EndDateTime="2018-10-05T15:27:57"
+         ElapsedTime="00:00:33"
+         ElapsedSecs="33">
+         <OutputLinks>
+            <Link Name="DSLink2"
+               LinkType="3"
+               Desc=""
+               Stage="Sort_3"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="19.9485"
+               PID="2956">
+               <Link Name="DSLink2"
+                  RowCount="100000000"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Sort_3"
+         StageStatus="2"
+         StageType="PxSort"
+         Desc=""
+         StartDateTime="2018-10-05T15:27:24"
+         EndDateTime="2018-10-05T15:28:35"
+         ElapsedTime="00:01:11"
+         ElapsedSecs="71">
+         <InputLinks>
+            <Link Name="DSLink2"
+               LinkType="1"
+               Desc=""
+               Stage="Row_Generator_0"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink5"
+               LinkType="3"
+               Desc=""
+               Stage="Aggregator_15"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="43.4946"
+               PID="6416">
+               <Link Name="DSLink2"
+                  RowCount="50000431"/>
+               <Link Name="DSLink5"
+                  RowCount="50000431"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="54.2263"
+               PID="8444">
+               <Link Name="DSLink2"
+                  RowCount="49999569"/>
+               <Link Name="DSLink5"
+                  RowCount="49999569"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Aggregator_15"
+         StageStatus="2"
+         StageType="PxAggregator"
+         Desc=""
+         StartDateTime="2018-10-05T15:27:24"
+         EndDateTime="2018-10-05T15:28:35"
+         ElapsedTime="00:01:11"
+         ElapsedSecs="71">
+         <InputLinks>
+            <Link Name="DSLink5"
+               LinkType="1"
+               Desc=""
+               Stage="Sort_3"/>
+         </InputLinks>
+         <OutputLinks>
+            <Link Name="DSLink16"
+               LinkType="3"
+               Desc=""
+               Stage="Peek_9"/>
+         </OutputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="42.3465"
+               PID="2904">
+               <Link Name="DSLink5"
+                  RowCount="50000431"/>
+               <Link Name="DSLink16"
+                  RowCount="50000431"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="49.3214"
+               PID="1804">
+               <Link Name="DSLink5"
+                  RowCount="49999569"/>
+               <Link Name="DSLink16"
+                  RowCount="49999569"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+      <Stage Name="Peek_9"
+         StageStatus="2"
+         StageType="PxPeek"
+         Desc=""
+         StartDateTime="2018-10-05T15:27:24"
+         EndDateTime="2018-10-05T15:28:35"
+         ElapsedTime="00:01:11"
+         ElapsedSecs="71">
+         <InputLinks>
+            <Link Name="DSLink16"
+               LinkType="1"
+               Desc=""
+               Stage="Aggregator_15"/>
+         </InputLinks>
+         <InstanceSet>
+            <Instance Id="0"
+               CPU="0.4024"
+               PID="8932">
+               <Link Name="DSLink16"
+                  RowCount="10"/>
+            </Instance>
+            <Instance Id="1"
+               CPU="0.568"
+               PID="7588">
+               <Link Name="DSLink16"
+                  RowCount="10"/>
+            </Instance>
+         </InstanceSet>
+      </Stage>
+   </ComponentSet>
+</Job>
