@@ -7,3 +7,5 @@
 [30/11/18 12:17:30:030 IST] ERROR RulesDAOImpl getAllRulesDescription: Error occured while getting description for all rules: null
 [30/11/18 12:17:30:030 IST] ERROR RECache initializeRuleCommentry: Error occured while initializing all the rules descriptions:null
 [30/11/18 12:30:22:022 IST] ERROR RECache initializeRuleCommentry: Error occured while initializing all the rules descriptions:null
+
+
